@@ -1,6 +1,14 @@
 class Robot
   attr_accessor :needs_repairs, :foreign_model, :vintage_model, :todos, :day_off
 
+  def todos
+    @todos
+  end
+
+  def todos=(arg)
+    @todos = arg
+  end
+
   def initialize
     @todos = []
   end
